@@ -4,9 +4,9 @@
   * main - main function
   * Return: return 0
   */
-int main(void)
+int  main(void)
 {
-	write(STDOUT_FILENO, "Hello world \n", 18);
+	write(STDOUT_FILENO, "HELLO WORLD\n", 15);
 
 	return (0);
 }

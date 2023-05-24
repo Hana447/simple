@@ -1,12 +1,16 @@
 #include <stdio.h>
 #include <unistd.h>
-/**
-  * main - main function
-  * Return: return 0
-  */
-int  main(void)
-{
-	write(STDOUT_FILENO, "HELLO WORLD\n", 15);
 
+/**
+ * main - PID
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	pid_t my_pid;
+
+	my_pid = getpid();
+	printf("%u\n", my_pid);
 	return (0);
 }
